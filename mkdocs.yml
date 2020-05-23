@@ -18,7 +18,7 @@ nav:
   - '首页': index.md
   - '关于': about.md
   - 'MySQL':
-    - 'Mysql 简介': mysql/index.md
+    - 'MySQL简介': mysql/index.md
     - '连接登陆': mysql/login.md
     - '安全设置': 
       - '安装之后安全设置': mysql/security.md
