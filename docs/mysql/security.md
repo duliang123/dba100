@@ -1,9 +1,19 @@
 # 安装之后安全设置 
 
-安装完`MySQL`之后，首先需要修改密码。
+查看用户
 
 ```sql
-shell> mysql -uroot -p
+select user,host from mysql.user;
+```
 
-mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
+删除空用户
+
+```sql
+delete from mysql.user where user='';
+```
+
+修改密码
+
+```sql
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
 ```
