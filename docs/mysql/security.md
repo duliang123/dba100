@@ -17,3 +17,10 @@ delete from mysql.user where user='';
 ```sql
 ALTER USER 'root'@'localhost' IDENTIFIED BY '自定义密码';
 ```
+
+`MySQL 5.6`
+
+```sql
+UPDATE mysql.user SET Password = PASSWORD('自定义密码') WHERE User = 'root';
+FLUSH PRIVILEGES;
+```
