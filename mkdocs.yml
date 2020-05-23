@@ -1,0 +1,34 @@
+site_name: DBA100.COM
+
+theme:
+  name: material
+  language: 'zh'
+  features:
+    - tabs
+
+nav:
+  - '首页': index.md
+  - '关于': about.md
+  - 'MySQL':
+    - 'Mysql 简介': mysql/index.md
+    - '安全设置': 1.md
+    - '连接登陆': 1.md
+    - 'MySQL程序': 1.md
+    - 'MySQL服务器管理': 1.md
+    - '备份与恢复':
+      - '备份恢复类型与方法': 1.md
+      - 'mysqldump逻辑备份': 2.md
+    - '元数据类SQL': 3.md
+    - '函数与操作符': 1.md
+    - '开发类SQL': 4.md
+  - 'MySQL 8':
+    - "MySQL 8 简介": mysql8/index.md
+#  - 'Redis':
+#    - 'Redis 简介': index.md
+#  - 'Memcached':
+#    - 'Memcached 简介': index.md
+#  - 'MongoDB':
+#    - 'MongoDB 简介': index.md
+#  - 'Elasticsearch':
+#    - 'Elasticsearch 简介': index.md
+
