@@ -1,5 +1,13 @@
+# Project information
 site_name: DBA100.COM
+site_description: 'MySQL、MySQL8、数据库运维自动化'
+site_author: 'duliang'
+site_url: 'http://www.dba100.com'
 
+# Copyright
+copyright: 'Copyright &copy; 2020 dba100.com'
+
+# Configuration
 theme:
   name: material
   language: 'zh'
