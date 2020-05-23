@@ -21,7 +21,7 @@ https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html
 
 
 
-### 访问控制，第一阶段：连接验证**
+### 访问控制，第一阶段：连接验证
 
 账户|主机
 ---|---
@@ -36,7 +36,7 @@ https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html
 'fred'|'198.51.100.0/255.255.255.0'
 
 
-### 访问控制，第2阶段：请求验证**
+### 访问控制，第2阶段：请求验证
 
 建立连接后，服务器进入访问控制的第2阶段。 对于通过该连接发出的每个请求，服务器确定您要执行的操作，然后检查您是否具有足够的权限来执行此操作。 这是授权表中的特权列发挥作用的地方。 这些权限可以来自任何用户，db，tables_priv，columns_priv或procs_priv表。 
 
