@@ -3,5 +3,7 @@
 安装完`MySQL`之后，首先需要修改密码。
 
 ```sql
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
+shell> mysql -uroot -p
+
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
 ```
