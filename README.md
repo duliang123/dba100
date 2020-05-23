@@ -1,6 +1,6 @@
 # DBA100
 
-网站：www.dba100.com
+网站：www.dba100.com (Made with Material for MkDocs)
 
 数据库管理员
 
