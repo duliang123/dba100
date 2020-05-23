@@ -23,7 +23,7 @@ nav:
     - '安全设置': 
       - '安装之后安全设置': mysql/security.md
       - '一般安全问题': mysql/general-security-issues.md
-    - 'MySQL程序': 1.md
+    - 'MySQL程序': mysql/programs.md
     - 'MySQL服务器管理': 1.md
     - '备份与恢复':
       - '备份恢复类型与方法': 1.md
