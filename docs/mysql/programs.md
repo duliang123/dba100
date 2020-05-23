@@ -17,7 +17,7 @@
 * mysql_tzinfo_to_sql — 加载时区表
 * mysql_upgrade — 检查并升级MySQL表
 
-# MySQL客户端程序
+## MySQL客户端程序
 
 * mysql — MySQL命令行客户端
 * mysqladmin — 管理MySQL服务器的客户端
@@ -28,7 +28,7 @@
 * mysqlshow — 显示数据库，表和列信息
 * mysqlslap — 压力测试工具
 
-# MySQL管理和实用程序
+## MySQL管理和实用程序
 
 * innochecksum — 离线InnoDB文件校验工具
 * myisam_ftdump — 显示全文索引信息
@@ -39,15 +39,15 @@
 * mysqlbinlog — 处理二进制日志文件的实用程序
 * mysqldumpslow — 总结慢查询日志文件
 
-# MySQL程序开发实用程序
+## MySQL程序开发实用程序
 
 * mysql_config — 显示编译客户端的选项
 * my_print_defaults — 从选项文件显示选项
 * resolve_stack_dump — Resolve Numeric Stack Trace Dump to Symbols
 
-#### 实践
+## 实践
 
-## mysql_config_editor
+### mysql_config_editor
 
 `mysql_config_editor`程序将身份验证凭据存储在名为`.mylogin.cnf`文件中，MySQL客户端程序稍后可以读取该文件以获取用于连接到MySQL服务器的身份验证凭据。
 
