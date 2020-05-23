@@ -15,5 +15,5 @@ delete from mysql.user where user='';
 修改密码
 
 ```sql
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
+ALTER USER 'root'@'localhost' IDENTIFIED BY '自定义密码';
 ```
