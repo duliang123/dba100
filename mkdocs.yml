@@ -11,8 +11,10 @@ nav:
   - '关于': about.md
   - 'MySQL':
     - 'Mysql 简介': mysql/index.md
-    - '安全设置': 1.md
-    - '连接登陆': 1.md
+    - '连接登陆': mysql/login.md
+    - '安全设置': 
+      - '安装之后安全设置': mysql/security.md
+      - '一般安全问题': general-security-issues.md
     - 'MySQL程序': 1.md
     - 'MySQL服务器管理': 1.md
     - '备份与恢复':
