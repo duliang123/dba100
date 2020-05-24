@@ -14,9 +14,9 @@ ln -s /dev/null $HOME/.mysql_history
 mysql -u root -p 连接方式
 ```
 
-> mysql 命令行如果`未指定主机`或`主机为 localhost`，则会发生与本地主机的连接
+### 注意
 
-在类Unix上，默认使用Unix套接字文件进行连接
+mysql 命令行如果`未指定主机`或`主机为 localhost`，则会发生与本地主机的连接，在类Unix上，默认使用Unix套接字文件进行连接。
 
 我们把 /etc/my.cnf 配置文件中 [mysqld] 内的套接字地址改下：socket = /tmp/1mysql.sock
 
