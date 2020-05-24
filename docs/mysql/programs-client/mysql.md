@@ -23,7 +23,7 @@ mysql 命令行如果`未指定主机`或`主机为 localhost`，则会发生与
 ```bash
 # mysql
 ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
-或
+
 # mysql -h localhost -u root -p
 Enter password: 
 ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
