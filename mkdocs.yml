@@ -5,7 +5,7 @@ site_author: 'duliang'
 site_url: 'http://www.dba100.com'
 
 # Copyright
-copyright: 'Copyright &copy; 2020 <a href="http://www.dba100.com" target="_balank" text-decoration:none">dba100.com</a> <a href="http://beian.miit.gov.cn" target="_balank" text-decoration:none">苏ICP备17064193号</a>'
+copyright: 'Copyright &copy; 2020 <a href="http://www.dba100.com">dba100.com</a> <a href="http://beian.miit.gov.cn" target="_balank">苏ICP备17064193号</a>'
 
 # Configuration
 theme:
