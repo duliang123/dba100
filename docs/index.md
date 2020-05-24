@@ -15,6 +15,8 @@ DBA的核心目标
 
 ## 数据库
 
+官方网站
+
 * [MySQL](https://dev.mysql.com/doc/) 最流行的关系型数据库管理系统之一
 * [Redis](https://redis.io/documentation) 高性能的key-value数据库
 * [Memcached](https://memcached.org/) 分布式的高速缓存系统
