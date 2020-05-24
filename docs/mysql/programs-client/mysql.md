@@ -8,7 +8,9 @@
 ```bash
 export PATH=$PATH:/usr/local/mysql/bin
 ln -s /dev/null $HOME/.mysql_history
+```
 
+```bash
 mysql -u root -p 连接方式
 ```
 
