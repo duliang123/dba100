@@ -20,7 +20,7 @@ mysql -u root -p 连接方式
 
 我们把 /etc/my.cnf 配置文件中 [mysqld] 内的套接字地址改下：socket = /tmp/1mysql.sock
 
-```
+```bash
 # mysql
 ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
 或
