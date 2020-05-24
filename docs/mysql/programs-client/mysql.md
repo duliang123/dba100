@@ -16,7 +16,7 @@ mysql -u root -p 连接方式
 
 mysql 命令行不加参数，默认使用Unix套接字文件进行连接
 
-> 我们把/etc/my.cnf配置文件中[mysqld]内的套接字地址改下：socket = /tmp/1mysql.sock
+> 我们把 /etc/my.cnf 配置文件中 [mysqld] 内的套接字地址改下：socket = /tmp/1mysql.sock
 
 ```
 # mysql
