@@ -27,11 +27,12 @@ ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mys
 # mysql -h localhost -u root -p
 Enter password: 
 ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
+```
 
 mysql提示找不到默认的/tmp/mysql.sock文件了，加-S参数指定下套接字文件就可以连接了。
 
-
-# mysql -S /tmp/1mysql.sock
+```bash
+mysql -S /tmp/1mysql.sock
 ```
 
 ## 客户端定制配置
