@@ -6,5 +6,6 @@
 * TCP/IP `-h x.x.x.x -P3306`
 
 ```bash
+export PATH=$PATH:/usr/local/mysql/bin
 mysql -uroot -p 连接方式
 ```
