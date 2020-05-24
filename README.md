@@ -2,6 +2,8 @@
 
 网站：www.dba100.com (Made with Material for MkDocs)
 
+多年实践汇聚本站，确保可用，不断更新中，欢迎指正。
+
 数据库管理员
 
 > Database Administrator，简称DBA，是从事管理和维护数据库管理系统(DBMS)的相关工作人员的统称。
