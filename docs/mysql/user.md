@@ -31,9 +31,6 @@ mysql> SELECT User, Host, Password FROM mysql.user;
 #### 删除匿名账户
 
 ```sql
-mysql -uroot -p -S /data/mysql_3306/mysql.sock
-
-
 mysql> DROP USER ''@'localhost';
 mysql> DROP USER ''@'vb11';
 
@@ -64,6 +61,32 @@ mysql> SET PASSWORD FOR 'root'@'::1' = PASSWORD('duliangduliang');
 
 mysql> UPDATE mysql.user SET Password = PASSWORD('duliang') WHERE User = 'root';
 mysql> flush privileges;
+```
+
+#### 删除默认test库
+
+```sql
+mysql> DROP DATABASE test;
+mysql> show databases;
+mysql> SELECT DB  FROM mysql.db WHERE Db LIKE 'test%';
+mysql> DELETE FROM mysql.db WHERE Db LIKE 'test%';
+mysql> SELECT * FROM mysql.db;
+```
+
+#### 授权访问
+
+```sql
+mysql> create database db1 default character set utf8;
+ 
+mysql> create user 'duliang'@'localhost' identified by 'duliang';
+
+mysql> grant all privileges on db1.* to 'duliang'@'localhost' with grant option;
+
+mysql> show grants for 'duliang'@'localhost';
+
+mysql> select host,db,user from mysql.db;
+
+mysql> select host, user, password from mysql.user;
 ```
 
 ## MySQL访问控制和帐户管理
