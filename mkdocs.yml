@@ -38,8 +38,7 @@ nav:
       - '备份恢复类型与方法': mysql/backup-and-recovery/backup-types-and-methods.md
       - 'mysqldump逻辑备份': mysql/backup-and-recovery/mysqldump.md
     - '函数与操作符': functions_and_operators.md
-    - '元数据类SQL': mysql/metadata.md
-    - '开发类SQL': mysql/sql.md
+    - 'SQL 语句': mysql/sql.md
   - 'MySQL 8':
     - "MySQL 8 简介": mysql8/index.md
 #  - 'Redis':
