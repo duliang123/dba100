@@ -89,6 +89,39 @@ mysql> select host,db,user from mysql.db;
 mysql> select host, user, password from mysql.user;
 ```
 
+#### 忘记密码操作
+
+```bash
+/usr/local/mysql/bin/mysqld_safe \
+--defaults-file=/data/mysql_3306/my.cnf --skip-grant-tables 2>&1 >/tmp/my.log &
+
+cat /tmp/my.log
+```
+
+```bash
+mysql -S /data/mysql_3306/mysql.sock
+```
+
+```sql
+mysql> update mysql.user set authentication_string=password('密码') where user='root';
+mysql> flush privileges;
+```
+
+#### 总结
+
+```sql
+DROP DATABASE test;
+DELETE FROM mysql.db WHERE Db LIKE 'test%';
+
+delete from mysql.user where user='';
+
+UPDATE mysql.user SET Password = PASSWORD('密码') WHERE User = 'root';
+FLUSH PRIVILEGES;
+
+show grants for 'duliang'@'localhost';
+DROP USER 'duliang'@'localhost';
+```
+
 ## MySQL访问控制和帐户管理
 
 帐户名称的语法为：`'user_name'@'host_name'`
