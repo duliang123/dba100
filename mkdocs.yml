@@ -35,8 +35,8 @@ nav:
     - 'MySQL服务器管理': 
       - '配置和状态信息': mysql/server-administration/server-configuration.md
     - '备份与恢复':
-      - '备份恢复类型与方法': 1.md
-      - 'mysqldump逻辑备份': 2.md
+      - '备份恢复类型与方法': mysql/backup-and-recovery/backup-types-and-methods.md
+      - 'mysqldump逻辑备份': mysql/backup-and-recovery/mysqldump.md
     - '元数据类SQL': 3.md
     - '函数与操作符': 1.md
     - '开发类SQL': 4.md
