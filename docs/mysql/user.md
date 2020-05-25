@@ -118,6 +118,18 @@ delete from mysql.user where user='';
 UPDATE mysql.user SET Password = PASSWORD('密码') WHERE User = 'root';
 FLUSH PRIVILEGES;
 
+
+CREATE DATABASE `db1` DEFAULT CHARACTER SET utf8;
+CREATE TABLE `table1` (
+  `id` mediumint(7) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `number` int(5) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='表1'
+
+CREATE USER 'duliang'@'localhost' IDENTIFIED BY 'DL2016-CZ2016-rand@_@db.com';
+GRANT ALL PRIVILEGES ON db1.* TO 'duliang'@'localhost' WITH GRANT OPTION;
+
 show grants for 'duliang'@'localhost';
 DROP USER 'duliang'@'localhost';
 ```
