@@ -20,10 +20,6 @@ Your MySQL connection id is 12
 Server version: 5.6.29-log Source distribution
 mysql> help //输入hel 或者 ? 就显示客户端的帮助，而不是服务器端。
 
-List of all MySQL commands:
-Note that all text commands must be first on line and end with ';'
-?         (\?) Synonym for `help'.
-
 clear     (\c) Clear the current input statement.
 #清除当前的sql输入语句，如输错sql语句（未加分号时）回车，可跳出当前的输入。当然也可以在语句后输入分号结束，但有报错信息。
 
