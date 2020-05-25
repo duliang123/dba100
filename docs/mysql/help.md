@@ -12,7 +12,7 @@ http://dev.mysql.com/doc/refman/5.7/en/
 
 ## 二、mysql客户端工具
 
-```bash
+```sql
 # mysql -uroot -p -S /data/mysql_3306/mysql.sock
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -271,3 +271,95 @@ topics:
    SHOW WARNINGS
    ```
    
+## 三、? show 命令（查看一些数据库创建的DDL，事件的DDL）
+
+```mysql
+mysql> ? show
+Name: 'SHOW'
+Description:
+SHOW has many forms that provide information about databases, tables,
+columns, or status information about the server. This section describes
+those following:
+
+SHOW AUTHORS
+SHOW {BINARY | MASTER} LOGS
+SHOW BINLOG EVENTS [IN 'log_name'] [FROM pos] [LIMIT [offset,] row_count]
+SHOW CHARACTER SET [like_or_where]
+SHOW COLLATION [like_or_where]
+SHOW [FULL] COLUMNS FROM tbl_name [FROM db_name] [like_or_where]
+SHOW CONTRIBUTORS
+SHOW CREATE DATABASE db_name
+SHOW CREATE EVENT event_name
+SHOW CREATE FUNCTION func_name
+SHOW CREATE PROCEDURE proc_name
+SHOW CREATE TABLE tbl_name
+SHOW CREATE TRIGGER trigger_name
+SHOW CREATE VIEW view_name
+SHOW DATABASES [like_or_where]
+SHOW ENGINE engine_name {STATUS | MUTEX}
+SHOW [STORAGE] ENGINES
+SHOW ERRORS [LIMIT [offset,] row_count]
+SHOW EVENTS
+SHOW FUNCTION CODE func_name
+SHOW FUNCTION STATUS [like_or_where]
+SHOW GRANTS FOR user
+SHOW INDEX FROM tbl_name [FROM db_name]
+SHOW MASTER STATUS
+SHOW OPEN TABLES [FROM db_name] [like_or_where]
+SHOW PLUGINS
+SHOW PROCEDURE CODE proc_name
+SHOW PROCEDURE STATUS [like_or_where]
+SHOW PRIVILEGES
+SHOW [FULL] PROCESSLIST
+SHOW PROFILE [types] [FOR QUERY n] [OFFSET n] [LIMIT n]
+SHOW PROFILES
+SHOW SLAVE HOSTS
+SHOW SLAVE STATUS
+SHOW [GLOBAL | SESSION] STATUS [like_or_where]
+SHOW TABLE STATUS [FROM db_name] [like_or_where]
+SHOW [FULL] TABLES [FROM db_name] [like_or_where]
+SHOW TRIGGERS [FROM db_name] [like_or_where]
+SHOW [GLOBAL | SESSION] VARIABLES [like_or_where]
+SHOW WARNINGS [LIMIT [offset,] row_count]
+
+like_or_where:
+    LIKE 'pattern'
+  | WHERE expr
+
+If the syntax for a given SHOW statement includes a LIKE 'pattern'
+part, 'pattern' is a string that can contain the SQL "%" and "_"
+wildcard characters. The pattern is useful for restricting statement
+output to matching values.
+
+Several SHOW statements also accept a WHERE clause that provides more
+flexibility in specifying which rows to display. See
+http://dev.mysql.com/doc/refman/5.6/en/extended-show.html.
+
+URL: http://dev.mysql.com/doc/refman/5.6/en/show.html
+
+mysql> ? show create database
+Name: 'SHOW CREATE DATABASE'
+Description:
+Syntax:
+SHOW CREATE {DATABASE | SCHEMA} [IF NOT EXISTS] db_name
+
+Shows the CREATE DATABASE statement that creates the named database. If
+the SHOW statement includes an IF NOT EXISTS clause, the output too
+includes such a clause. SHOW CREATE SCHEMA is a synonym for SHOW CREATE
+DATABASE.
+
+URL: http://dev.mysql.com/doc/refman/5.6/en/show-create-database.html
+
+Examples:
+mysql> SHOW CREATE DATABASE test\G
+*************************** 1. row ***************************
+       Database: test
+Create Database: CREATE DATABASE `test`
+                 /*!40100 DEFAULT CHARACTER SET latin1 */
+
+mysql> SHOW CREATE SCHEMA test\G
+*************************** 1. row ***************************
+       Database: test
+Create Database: CREATE DATABASE `test`
+                 /*!40100 DEFAULT CHARACTER SET latin1 */
+```
