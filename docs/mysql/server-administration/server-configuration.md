@@ -1,6 +1,7 @@
 # 配置和状态信息
 
 * https://dev.mysql.com/doc/refman/5.7/en/server-configuration.html
+* [服务器选项，系统变量和状态变量参考](https://dev.mysql.com/doc/refman/5.7/en/server-option-variable-reference.html)
 
 MySQL服务器有许多操作参数，您可以使用命令行选项或配置文件（选项文件）在服务器启动时更改这些参数。 也可以在运行时更改许多参数。
 
