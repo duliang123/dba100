@@ -12,7 +12,7 @@ http://dev.mysql.com/doc/refman/5.7/en/
 
 ## 二、mysql客户端工具
 
-```sql
+```bash
 # mysql -uroot -p -S /data/mysql_3306/mysql.sock
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
