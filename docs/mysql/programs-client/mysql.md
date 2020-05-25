@@ -48,6 +48,7 @@ mysql -S /tmp/1mysql.sock
 [client]
 port=3306
 socket=/tmp/mysql.sock
+default-character-set=utf8
 
 [mysql]
 port=3306
