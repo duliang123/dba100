@@ -32,7 +32,8 @@ nav:
       - '一般安全问题': mysql/security/general-security-issues.md
     - '用户管理': mysql/user.md
     - 'MySQL程序': mysql/programs.md
-    - 'MySQL服务器管理': 1.md
+    - 'MySQL服务器管理': 
+      - '配置和状态信息': mysql/server-administration/server-configuration.md
     - '备份与恢复':
       - '备份恢复类型与方法': 1.md
       - 'mysqldump逻辑备份': 2.md
