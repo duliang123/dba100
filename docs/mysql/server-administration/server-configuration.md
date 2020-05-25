@@ -1,4 +1,4 @@
-# 配置服务器
+# 配置和状态信息
 
 * https://dev.mysql.com/doc/refman/5.7/en/server-configuration.html
 
