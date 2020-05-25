@@ -2,7 +2,68 @@
 
 ## 常见用户权限分配
 
+#### 查看用户密码
+
+mysql5.7.6
+
+> 语句使用hex(),因为存储在authentication_string列密码可能包含二进制数据而不能很好的显示。
+
 ```sql
+mysql> SELECT User, Host, HEX(authentication_string) FROM mysql.user;
+```
+
+mysql5.7.6之前：
+
+```sql
+mysql> SELECT User, Host, Password FROM mysql.user;
++------+-----------+----------+
+| User | Host      | Password |
++------+-----------+----------+
+| root | localhost |          |
+| root | vb11      |          |
+| root | 127.0.0.1 |          |
+| root | ::1       |          |
+|      | localhost |          |
+|      | vb11      |          |
++------+-----------+----------+
+```
+
+#### 删除匿名账户
+
+```sql
+mysql -uroot -p -S /data/mysql_3306/mysql.sock
+
+
+mysql> DROP USER ''@'localhost';
+mysql> DROP USER ''@'vb11';
+
+以上2行等同
+
+mysql> delete from mysql.user where user='';
+```
+
+#### 修改密码
+
+MySQL 5.7.6
+
+```sql
+mysql> ALTER USER user IDENTIFIED BY 'new_password';
+```
+
+MySQL 5.7.6之前：
+
+> mysql> SET PASSWORD FOR user = PASSWORD('new_password');
+
+```sql
+mysql> SET PASSWORD FOR 'root'@'localhost' = PASSWORD('duliangduliang');
+mysql> SET PASSWORD FOR 'root'@'127.0.0.1' = PASSWORD('duliangduliang');
+mysql> SET PASSWORD FOR 'root'@'vb11' = PASSWORD('duliangduliang');
+mysql> SET PASSWORD FOR 'root'@'::1' = PASSWORD('duliangduliang');
+
+以上4行等同
+
+mysql> UPDATE mysql.user SET Password = PASSWORD('duliang') WHERE User = 'root';
+mysql> flush privileges;
 ```
 
 ## MySQL访问控制和帐户管理
