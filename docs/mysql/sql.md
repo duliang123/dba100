@@ -132,6 +132,44 @@ alter table 表名 change 字段 新字段 类型 ...
 alter table tb1 change dept department varchar(16);
 ```
 
+## CURD 操作
+
+#### 插入数据
+
+1、指定列插入
+
+```sql
+insert into tb1(name) values('duliang');
+```
+
+2、不指定列，就要按顺序插入
+
+```sql
+insert into tb1 values(2,'dl',0,NULL);
+```
+
+3、批量插入
+
+```sql
+insert into tb1 values(3,'dl2',0,NULL),(4,'dl3',0,NULL),(5,'dl4',0,NULL);
+```
+
+#### 修改更新表数据
+
+update 表名 set 字段=新值, where 条件
+
+```sql
+update tb1 set name='x', age=18 where id=5;
+```
+
+#### 删除表中数据
+
+delete from 表名 where 条件
+
+```sql
+delete from tb1 where id=5;
+```
+
 ## 索引
 
 ## 存储过程
