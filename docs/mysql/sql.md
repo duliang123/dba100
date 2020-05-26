@@ -72,6 +72,26 @@ show create table tb1\G;
 desc tb1;
 ```
 
+更改表名
+
+> rename table 表名 to 新表名
+
+> 或
+
+> alter table 表名 rename to 新表名;
+
+```sql
+rename table tb1 to tb2;
+
+alter table tb2 rename to tb1;
+```
+
+删除表
+
+```sql
+drop table 表名
+```
+
 ## 字段
 
 修改表字段
