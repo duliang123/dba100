@@ -1,6 +1,6 @@
 # 统计类SQL语句
 
-## 表
+## 表数量
 
 查询指定数据库表的数量
 
@@ -8,7 +8,7 @@
 SELECT COUNT(*) TABLES, table_schema FROM information_schema.TABLES WHERE table_schema = '数据库名称';
 ```
 
-## 字段
+## 字段数量
 
 ```sql
 -- 查询一个表中有多少字段
