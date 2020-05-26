@@ -271,7 +271,9 @@ topics:
    SHOW WARNINGS
    ```
    
-## 三、? show 命令（查看一些数据库创建的DDL，事件的DDL）
+## 三、show 命令
+
+? show 命令（查看一些数据库创建的DDL，事件的DDL）
 
 ```mysql
 mysql> ? show
