@@ -365,3 +365,12 @@ mysql> SHOW CREATE SCHEMA test\G
 Create Database: CREATE DATABASE `test`
                  /*!40100 DEFAULT CHARACTER SET latin1 */
 ```
+
+```
+? show;
+help contents;
+help data definition;
+help create database;
+SHOW CHARACTER SET;
+show collation;
+```
