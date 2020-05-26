@@ -66,13 +66,51 @@ create table tb1(
 
 查看表结构
 
-```
+```sql
 show create table tb1\G;
 
 desc tb1;
 ```
 
 ## 字段
+
+修改表字段
+
+添加：alter table 表名 add 字段名 类型 其他(after字段|first)
+
+> 增加多个字段：多个add，用逗号隔开
+
+```sql
+alter table tb1 add sex tinyint(2) not null default 0 after id;
+```
+
+删除字段：alter table 表名 drop 字段
+
+```sql
+alter table tb1 drop sex;
+```
+
+改变字段类型：
+
+alter table 表名 modify 列 类型 ...
+
+```sql
+alter table tb1 add sex tinyint(2) not null default 0 after name;
+alter table tb1 modify sex char(1) after name;
+```
+
+```sql
+-- 再用modify改回来
+alter table tb1 modify sex tinyint(2) not null default 0 after name;
+```
+
+修改字段名称
+
+alter table 表名 change 字段 新字段 类型 ...
+
+```sql
+alter table tb1 change dept department varchar(16);
+```
 
 ## 索引
 
