@@ -39,7 +39,7 @@ nav:
       - 'mysqldump逻辑备份': mysql/backup-and-recovery/mysqldump.md
     - '函数与操作符': mysql/functions_and_operators.md
     - 'SQL 语句': mysql/sql.md
-    - '运维统计类元数据SQL': mysql/metadata.md
+    - '运维操作统计元数据SQL': mysql/metadata.md
   - 'MySQL 8':
     - "MySQL 8 简介": mysql8/index.md
 #  - 'Redis':
