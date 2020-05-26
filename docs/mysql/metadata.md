@@ -34,10 +34,9 @@ SELECT TABLE_NAME, (DATA_LENGTH/1024/1024) as DataM ,(INDEX_LENGTH/1024/1024) as
 
 ```sql
 -- 统计：数据占用空间大小
-select concat(round(sum(DATA_LENGTH/1024/1024),2),'MB') as data from TABLES where table_schema='db1' 
-
+select concat(round(sum(DATA_LENGTH/1024/1024),2),'MB') as data from TABLES where table_schema='数据库名称' 
 -- 统计：数据+索引占用空间大小
-
+select concat(round(sum(data_length/1024/1024),2)+round(sum(index_length/1024/1024),2),'MB') as data from tables where table_schema='数据库名称';
 ```
 
 ## 数据量
