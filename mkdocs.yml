@@ -42,8 +42,10 @@ nav:
     - '统计类SQL': mysql/metadata.md
   - 'MySQL 8':
     - "MySQL 8 简介": mysql8/index.md
-  - '开发类SQL': mysql/sql.md
-  - '统计类SQL': mysql/metadata.md
+  - '开发类SQL': 
+    - '开发类SQL': mysql/sql.md
+  - '统计类SQL':
+    - '统计类SQL': mysql/metadata.md
 #  - 'Redis':
 #    - 'Redis 简介': index.md
 #  - 'Memcached':
