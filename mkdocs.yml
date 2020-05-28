@@ -44,7 +44,7 @@ nav:
     - '开发类SQL': mysql/sql.md
   - '统计类SQL':
     - '统计类SQL': mysql/metadata.md
-  - '云数据库'
+  - '云数据库':
     - '阿里云数据库': aliyun/阿里云数据库.md
   - 'MySQL 8':
     - "MySQL 8 简介": mysql8/index.md
