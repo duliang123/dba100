@@ -37,6 +37,7 @@ nav:
   - '备份与恢复':
     - '备份恢复类型与方法': mysql/backup-and-recovery/backup-types-and-methods.md
     - 'mysqldump逻辑备份': mysql/backup-and-recovery/mysqldump.md
+    - '恢复：导入SQL备份文件.md': mysql/backup-and-recovery/导入sql备份文件.md
   - '函数与操作符': 
     - '常用函数': mysql/functions_and_operators.md
   - '开发类SQL': 
