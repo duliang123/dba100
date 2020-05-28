@@ -34,12 +34,11 @@ nav:
     - 'MySQL程序': mysql/programs.md
     - 'MySQL服务器管理': 
       - '配置和状态信息': mysql/server-administration/server-configuration.md
-    - '备份与恢复':
-      - '备份恢复类型与方法': mysql/backup-and-recovery/backup-types-and-methods.md
-      - 'mysqldump逻辑备份': mysql/backup-and-recovery/mysqldump.md
-    - '函数与操作符': mysql/functions_and_operators.md
-    - '开发类SQL': mysql/sql.md
-    - '统计类SQL': mysql/metadata.md
+  - '备份与恢复':
+    - '备份恢复类型与方法': mysql/backup-and-recovery/backup-types-and-methods.md
+    - 'mysqldump逻辑备份': mysql/backup-and-recovery/mysqldump.md
+  - '函数与操作符': 
+    - '常用函数': mysql/functions_and_operators.md
   - '开发类SQL': 
     - '开发类SQL': mysql/sql.md
   - '统计类SQL':
