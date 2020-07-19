@@ -15,6 +15,13 @@
 编译安装
 
 ```bash
+VERSION = 8.0.21
+cd /usr/local/src
+wget -c https://cdn.mysql.com//Downloads/MySQL-8.0/mysql-boost-${VERSION}.tar.gz
+tar zxvf mysql-boost-${VERSION}.tar.gz 
+```
+
+```bash
 # Preconfiguration setup
 groupadd mysql
 useradd -r -g mysql -s /bin/false mysql
