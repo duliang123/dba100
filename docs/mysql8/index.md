@@ -12,6 +12,10 @@
 * GCC 5.3
 * ncurses 库
 
+编译参数
+
+https://dev.mysql.com/doc/refman/8.0/en/source-configuration-options.html
+
 编译安装
 
 ```bash
