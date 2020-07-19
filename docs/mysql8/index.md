@@ -14,7 +14,7 @@
 
 编译安装
 
-```
+```bash
 # Preconfiguration setup
 groupadd mysql
 useradd -r -g mysql -s /bin/false mysql
