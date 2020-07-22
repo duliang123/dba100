@@ -3,7 +3,12 @@
 > 文档：https://dev.mysql.com/doc/refman/8.0/en/
 
 
-## 安装
+## 二进制方式安装
+
+https://dev.mysql.com/doc/refman/8.0/en/binary-installation.html
+
+
+## 编译方式安装
 
 安装要求
 
