@@ -35,7 +35,16 @@ tar zxvf mysql-VERSION.tar.gz
 cd mysql-VERSION
 mkdir bld
 cd bld
-cmake ..
+
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local/mysql \
+      -DSYSCONFDIR=/etc \
+      -DWITH_ARCHIVE_STORAGE_ENGINE=1
+      -DWITH_BLACKHOLE_STORAGE_ENGINE=1
+      -DDEFAULT_CHARSET=utf8mb4 \
+      -DDEFAULT_COLLATION=utf8mb4_general_ci \
+      -DENABLED_LOCAL_INFILE=1 \
+      -DWITH_BOOST=../boost
+
 make
 make install
 # End of source-build specific instructions
