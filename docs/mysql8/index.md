@@ -7,6 +7,30 @@
 
 https://dev.mysql.com/doc/refman/8.0/en/binary-installation.html
 
+```
+strings /lib64/libc.so.6 | grep ^GLIBC
+dnf install libaio
+
+groupadd mysql
+useradd -r -g mysql -s /bin/false mysql
+tar xvf mysql-8.0.21-linux-glibc2.17-x86_64-minimal.tar.xz
+mv mysql-8.0.21-linux-glibc2.17-x86_64-minimal /usr/local
+
+cd /usr/local
+ln -s full-path-to-mysql-VERSION-OS mysql
+cd mysql
+mkdir mysql-files
+chown mysql:mysql mysql-files
+chmod 750 mysql-files
+bin/mysqld --initialize --user=mysql
+bin/mysql_ssl_rsa_setup
+bin/mysqld_safe --user=mysql &
+
+# Next command is optional
+cp support-files/mysql.server /etc/init.d/mysql.server
+```
+
+
 
 ## 编译方式安装
 
