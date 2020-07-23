@@ -10,6 +10,7 @@ https://dev.mysql.com/doc/refman/8.0/en/binary-installation.html
 ```
 strings /lib64/libc.so.6 | grep ^GLIBC
 dnf install libaio
+cd /usr/local/src/
 
 groupadd mysql
 useradd -r -g mysql -s /bin/false mysql
