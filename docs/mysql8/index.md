@@ -9,8 +9,10 @@ https://dev.mysql.com/doc/refman/8.0/en/binary-installation.html
 
 ```
 strings /lib64/libc.so.6 | grep ^GLIBC
-dnf install libaio
+dnf install libaio numactl
 cd /usr/local/src/
+mkdir -p /data/mysql_3306/{data,binlog,logs,relay-log,tmp,undolog}
+chown -R mysql:mysql /data/mysql_3306
 
 groupadd mysql
 useradd -r -g mysql -s /bin/false mysql
@@ -23,12 +25,15 @@ cd mysql
 mkdir mysql-files
 chown mysql:mysql mysql-files
 chmod 750 mysql-files
-bin/mysqld --initialize --user=mysql
+bin/mysqld --defaults-file=/data/mysql_3306/my.cnf --initialize --user=mysql
 bin/mysql_ssl_rsa_setup
-bin/mysqld_safe --user=mysql &
+bin/mysqld_safe --defaults-file=/data/mysql_3306/my.cnf --user=mysql &
 
 # Next command is optional
 cp support-files/mysql.server /etc/init.d/mysql.server
+
+
+export PATH=$PATH:/usr/local/mysql/bin
 ```
 
 
