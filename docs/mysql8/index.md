@@ -18,7 +18,7 @@ tar xvf mysql-8.0.21-linux-glibc2.17-x86_64-minimal.tar.xz
 mv mysql-8.0.21-linux-glibc2.17-x86_64-minimal /usr/local
 
 cd /usr/local
-ln -s full-path-to-mysql-VERSION-OS mysql
+ln -s mysql-8.0.21-linux-glibc2.17-x86_64-minimal mysql
 cd mysql
 mkdir mysql-files
 chown mysql:mysql mysql-files
