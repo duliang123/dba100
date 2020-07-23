@@ -32,11 +32,13 @@ bin/mysqld_safe --defaults-file=/data/mysql_3306/my.cnf --user=mysql &
 # Next command is optional
 cp support-files/mysql.server /etc/init.d/mysql.server
 
-
+cat /data/mysql_3306/data/error.log |grep password
 export PATH=$PATH:/usr/local/mysql/bin
 ```
 
-
+```sql
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'RXDyFF12et3Bgi';
+```
 
 ## 编译方式安装
 
