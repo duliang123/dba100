@@ -98,3 +98,17 @@ bin/mysqld_safe --user=mysql &
 # Next command is optional
 support-files/mysql.server /etc/init.d/mysql.server
 ```
+
+
+## 库 用户
+
+```sqk
+create database cloudadmin DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+CREATE USER 'cloudadmin'@'127.0.0.1'
+  IDENTIFIED BY 'RXDyFF12et3Bgi';
+GRANT ALL
+  ON cloudadmin.*
+  TO 'cloudadmin'@'127.0.0.1'
+  WITH GRANT OPTION;
+```
